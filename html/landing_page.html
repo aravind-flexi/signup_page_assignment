@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/x-icon" href="/Company/images/favicon.ico">
+<title>AR Solutions</title>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 10px;
+}
+
+html {
+  font-family: "Lucida Sans", sans-serif;
+}
+
+body {
+  background-image:url('/Company/images/bgimage.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.header {
+  background-color: black;
+  color: white;
+  text-align:center;
+  padding: 10px;
+}
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: black;
+  color: black;
+  
+}
+.header, .menu li, .footer {
+  position:relative;
+  animation-name: color;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes color {
+  0%   {background-color:black;}
+  25%  {background-color:grey;}
+  50%  {background-color:lightgrey;}
+  75%  {background-color:grey;}
+  100% {background-color:black;}
+}
+.menu li a {
+  text-decoration: none;
+  color: white;
+}
+
+.menu li:hover {
+  background-color: lightgrey;
+}
+.responsive {
+  max-width: 100%;
+  height: auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+.footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  font-size: 15px;
+  padding: 10px;
+}
+.social-links {
+    list-style: none;
+}
+
+.social-links li {
+    display: inline-block;
+    margin-right: 10px;
+    transition: width 2s, height 2s;
+}
+
+.social-links li:hover {
+    display: inline-block;
+    margin-right: 10px;
+    width: 50px;
+    height: 50px;
+}
+ 
+#arrow{
+  display:flex;
+  float:right;
+}
+/ * For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+}
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
+</style>
+</head>
+
+<body>
+  <header id="home">
+    <div class="header">
+      <h1>AR Solutions</h1>
+    </div>
+  </header>
+
+<div class="row">
+  <div class="col-3 col-s-5 menu">
+    <ul>
+      <li><a href="#about">About Us</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#products">Products</a></li>
+      <li><a href="#testimonials">Testimonials</li>
+      <li><a href="#contact">Contact Us</a></li>
+      <li><a href='/Company/images/thank.jpg'>Log Out</a></li>
+    </ul>
+  </div>
+
+<div class="col-9 col-s-7">
+
+<img class="responsive" src="\Company\images\welcome.jpg" alt="logo" >
+  
+<section id="about">
+  <h2>About Us</h2>
+  <hr>
+    <h3>Welcome to AR Solutions!</h3>
+    <p>At AR, we're on a mission to transform the way businesses operate through innovative AI solutions. With a commitment to excellence and a passion for pushing the boundaries of technology, we strive to empower organizations across industries to achieve their goals efficiently and effectively.</p>
+    <q>Empowering tomorrow's innovations, one idea at a time.</q>
+    <p>Harnessing cutting-edge AI technology to drive unprecedented efficiency, insight, and innovation across automobile industry, revolutionizing how industry operates and thrives in the digital age.</p>
+</section>
+
+<section id="services">
+  <h2>Services</h2>
+  <hr>
+    <ul>
+      <li>AI Consulting Services: Offering expertise and guidance on implementing AI solutions tailored to specific business needs.</li><br>
+      <li>AI-Powered Analytics: Leveraging AI techniques to analyze large datasets, uncover insights, and make data-driven decisions.</li><br>
+      <li>AI Integration Services: Integrating AI capabilities into existing software systems, platforms, or products.</li>
+    </ul>
+</section>
+
+<section id="products">
+  <h2>Products</h2>
+  <hr>
+    <ul>
+      <li>AI Platform: A comprehensive platform that enables businesses to develop, deploy, and manage AI applications and solutions.</li><br>
+      <li>Predictive Analytics Software: Software that utilizes machine learning algorithms to analyze data and forecast future trends, behavior, or outcomes.</li><br>
+      <li>AI-Powered Analytics Dashboards: Dashboards and visualization tools that leverage AI techniques to provide insights and actionable intelligence from data.</li>
+    </ul>
+</section>
+
+<section id="testimonials"> 
+  <h2>Customer Testimonials</h2>
+  <hr>
+    <p>Sarah Johnson, CEO of Tech Innovations Inc.</p>
+    <q>Implementing AR's solutions revolutionized our operations. With their predictive analytics software, we've seen a 30% increase in sales forecasting accuracy, leading to better inventory management and cost savings.</q>
+    
+    <p>John Smith, CTO of Global Logistics.</p>
+    <q>We turned to AR solutions for help with optimizing our supply chain, and the results have been phenomenal. Their AI-driven route optimization software reduced our delivery times by 20%, improving customer satisfaction and reducing operational costs.</q>
+
+    <p>Anna Nguyen, Director of Research at BioPharma Solutions.</p>
+    <q>As a biotech company, data analysis is critical to our research efforts. AR's AI platform has empowered our scientists with advanced analytics capabilities, accelerating drug discovery and development processes.</q>
+</section>
+
+<section id="contact">
+  <h2>Contact Us</h2>
+  <hr>
+    <form action="submit_contact.php" method="post">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+      <br>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      <br>
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" required></textarea>
+      <br>
+      <button type="submit">Send a message!</button>
+      <br>
+    </form>
+</section>
+</div>
+</div>
+
+<footer>
+  <div class="footer">
+    <p>Follow us on:</p>
+      <ul class="social-links">
+        <li><a href="https://linkedin.com" target="_blank"><img src="\Company\images\link.png" alt="linkedin logo" width="40px" height="40px" ></a></li>
+        <li><a href="https://twitter.com" target="_blank"><img src="\Company\images\twit.png" alt="twitter logo" width="40px" height="40px" ></a></li>
+        <li><a href="https://instagram.com" target="_blank"><img src="\Company\images\inst.jpeg" alt="instagram logo" width="40px" height="40px" ></a></li>
+	<li><a href="https://facebook.com" target="_blank"><img src="\Company\images\face.png" alt="facebook logo" width="40px" height="40px" ></a></li>
+      </ul>
+    <li><a href="#home"><img id="arrow" src="\Company\images\arrow.png" alt="top arrow" width="40px" height="40px" ></a></li> 
+    <p>&copy; 2024 AR Solutions. All rights reserved.</p>
+  </div>  
+</footer>
+
+</body>
+</html>
