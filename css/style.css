@@ -1,6 +1,9 @@
 body {
     font-family: Arial, sans-serif;
-    background-image: url('/Company/images/bgimage.jpg') ;
+    background-image: url('/form/images/image.jpg') ;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
     margin: 0;
     padding: 0;
     display: flex;
