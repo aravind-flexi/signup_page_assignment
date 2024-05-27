@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Signup/Login Page</title>
+  <link rel="stylesheet" href="/form/css/style.css">
+</head>
+
+<body>
+  <div class="col-5 col-s-6">
+  <div class="container">
+    <div id="signup-form">
+      <h2>Sign Up</h2>
+        <form id="formSignup" onsubmit="return handleSignup(event)">
+          <div>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+	    <span class="error" id="nameError"></span>
+	  </div>
+
+          <div>
+	    <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+	    <span class="error" id="emailError"></span>
+	  </div>
+
+	  <div>
+	    <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+	    <span class="error" id="passwordError"></span>
+	  </div>
+
+	  <div>
+            <label for="confirmPassword">Confirm Password</label>
+            <input type="password" id="confirmPassword" name="confirmPassword">
+            <span class="error" id="confirmPasswordError"></span>
+           </div>
+
+          <div>
+            <label for="dob">Date of Birth</label>
+            <input type="date" id="dob" name="dob" required>
+            <span class="error" id="dobError"></span>
+          </div>
+
+          <div>
+            <label for="gender">Gender</label>
+              <select id="gender" name="gender">
+                <option value="">Select Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            
+	    <div>
+              <label>
+                <input type="checkbox" id="terms" name="terms">
+                I agree to the Terms and Conditions
+              </label>
+              <span class="error" id="termsError"></span> 
+            </div>
+	      <button type="submit">Sign Up</button>
+          </form>
+      </div>	
+ 
+      <div id="login-form" style="display:none;">
+        <h2>Login</h2>
+          <form id="formLogin" onsubmit="return handleLogin(event)">
+            <div>
+              <label for="loginEmail">Email</label>
+              <input type="email" id="loginEmail" name="loginEmail">
+            </div>
+            <div>
+              <label for="loginPassword">Password</label>
+              <input type="password" id="loginPassword" name="loginPassword">
+            </div>
+              <button id="button" type="submit">Login</button>
+          </form>
+      </div>
+
+  <!--    <div id="home" style="displaly:none;">
+        <h2>Welcome!</h2>
+        <button onclick="handleLogout()">Logout</button>
+        </div>  -->
+       
+
+  </div>
+</div>
+
+<script src="/form/js/script.js"></script>
+
+</body>
+
+</html>
