@@ -113,7 +113,7 @@ function handleLogin(event) {
     if (loginEmail === 'aravindbabu663@gmail.com' && loginPassword === 'Aravind@9') {
         alert('Login Successful!');
 	document.getElementById('button').addEventListener('click', function() {
-        window.open('landing_page.html');
+        window.location.href='file:///C:/form/html/landing_page.html';
 });        
 	 
     } 
