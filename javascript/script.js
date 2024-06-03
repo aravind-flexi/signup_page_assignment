@@ -105,9 +105,6 @@ function handleSignup(event) {
     }
 }
 
-document.getElementById('button').addEventListener('click', function() {
-    window.open('landing_page.html');
-});
 function handleLogin(event) {
     event.preventDefault();
     const loginEmail = document.getElementById('loginEmail').value;
@@ -115,10 +112,13 @@ function handleLogin(event) {
 
     if (loginEmail === 'aravindbabu663@gmail.com' && loginPassword === 'Aravind@9') {
         alert('Login Successful!');
-	window.close();
+	document.getElementById('button').addEventListener('click', function() {
+        window.open('landing_page.html');
+});        
+	 
     } 
     else {
-        alert('Invalid login credentials');
+        alert('Invalid login credentials);
     }
 }
 
